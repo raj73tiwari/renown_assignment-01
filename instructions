@@ -1,0 +1,32 @@
+
+
+First setup virtual environment to install all dependencies for project.
+activate virtual environment
+run command pip -r requirements.txt to install all dependencies.
+
+Setup database using python manage.py makemigration and python manage.py migrate
+Start server using python manage.py runserver
+
+Endpoints
+
+User Signup
+URL: /api/signup/
+Method: POST
+Data: json ( user data)
+
+Generate OTP
+URL: /api/gen-otp/
+Method: POST
+Data: json (username)
+
+User Login
+URL: /api/login/
+Method: POST
+Data: json (username, otp)
+
+Update Full Name
+URL: /api/update-fullname/
+Method: POST
+Data: json ( new full name along with authorization header)
+
+

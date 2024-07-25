@@ -1,0 +1,32 @@
+****Steps Followed****
+
+First I created a new Django project and installed and configured Django REST Framework and djangorestframework-simplejwt for JWT authentication
+
+Then defined a custom User model with fields: username, email, mobile, and fullname along with opt and defined methods for otp creation and validation.
+
+Created serializers for user registration and updating user information.
+
+Implemented API views for user sign-up, OTP generation, User Login and updating the user's full name and configured JWT authentication for securing the update endpoint.
+
+Defined URL patterns for the API endpoints.
+
+
+****Challenges Faced****
+
+Although the assignment wasn't very difficult I had some trouble understanding whether we have to deploy this application on GCP and set-up actual otp sending mechanism
+but I implemented Dummy OTP mechanism for the demo.
+
+
+****Future Improvements****
+
+Actual OTP Sending Mechanism-
+Integrate with services like SendGrid or use inbuild packages to send OTPs via SMS or email.
+
+Add otp expiry and otp max attempts for further security. 
+
+Add functionalities for users to manage passwords, including password reset and change operations.
+
+Add proper data validation and checks
+
+Finally create a frontend with client side data validation for seamless integration.
+
